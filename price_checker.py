@@ -26,7 +26,7 @@ def run_checker(target, per):
         print('%.8f' % current_price)
         if (percent > 5.0):
             winsound.PlaySound('resources/down.wav', winsound.SND_FILENAME)
-
+    last_price = current_price
 while True:
     run_checker(sys.argv[1], sys.argv[2])
-    time.sleep(10)
+    time.sleep(1)
